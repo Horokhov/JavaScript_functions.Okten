@@ -145,16 +145,16 @@
 //  console.log(calcMin(numbers));
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
-let mass= [10, 20, 30, 4]
- function calc(array) {
-    let res=array[0];
-    for (let i=1; i<array; i++) {
-    const num=array[i];
-    res += num;
-    }
-    return res;
- }
-
-
-console.log(calc(mass));
+// let mass= [10, 20, 30, 4]
+//  function calc(array) {
+//     let res=0;
+//     for (let i=0; i<array.length; i++) {
+//     const num=array[i];
+//     res += num;
+//     }
+//     return res;
+//  }
+//
+//
+// console.log(calc(mass));
 
