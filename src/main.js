@@ -130,6 +130,18 @@
 // }
 // arrayPrinter(people);
 // - створити функцію яка повертає найменьше число з масиву
-
+//
+// let numbers= [10, 20, 30, 40]
+//  function calcMin(array) {
+//     let min=array[0]
+//      for (let numb of array) {
+//          if (numb <= min) {
+//              min=numb;
+//          }
+//      }
+//      return min;
+//  }
+//
+//  console.log(calcMin(numbers));
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
