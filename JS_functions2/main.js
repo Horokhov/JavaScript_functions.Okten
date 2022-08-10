@@ -60,9 +60,8 @@
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
 
-    let nums = [11,21,3];
- function sortNums(direction) {
-     direction.sort((value1,value2)=>value1[2]-value2[1]);
-     console.log(direction)
- }
- sortNums(nums);
+// let nums = [11,21,3];
+// nums.sort(function(a, b){return a-b});
+// console.log(nums)
+// nums.sort(function(a, b){return b-a});
+// console.log(nums)
