@@ -65,3 +65,37 @@
 // console.log(nums)
 // nums.sort(function(a, b){return b-a});
 // console.log(nums)
+
+// - є масив
+// -- відсортувати його за спаданням за monthDuration
+// -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+//
+// // coursesAndDurationArray.sort((par1, par2)=>par2.monthDuration - par1.monthDuration);
+// // console.log(coursesAndDurationArray);
+// let course= coursesAndDurationArray.filter (value => value.monthDuration > 5)
+// console.log(course);
+
+// описати колоду карт
+// - знайти піковий туз
+// - всі шістки
+// - всі червоні карти
+// - всі буби
+// - всі трефи від 9 та більше
+// {
+//     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
+//         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
+//     color:'', // 'red','black'
+// }
+
+let suits = ["spades", "diamonds", "clubs", "hearts"];
+let values = ["6", "7", "8", "9", "10", "J", "Q", "K","A","Joker"];
+let color = ["red", "black"]
