@@ -140,3 +140,45 @@
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+//
+// class Cinderella {
+//     constructor (name,age,footsize){
+//         this.name=name;
+//         this.age=age;
+//         this.footsize=footsize;
+//     }
+// }
+//
+// let newc= new Cinderella('Alina1',35,31);
+// let newc1= new Cinderella('Alina2',35,32);
+// let newc2= new Cinderella('Alina3',35,33);
+// let newc3= new Cinderella('Alina4',35,34);
+// let newc4= new Cinderella('Alina5',35,35);
+// let newc5= new Cinderella('Alina6',35,36);
+// let newc6= new Cinderella('Alina7',35,37);
+// let newc7= new Cinderella('Alina8',35,38);
+// let newc8= new Cinderella('Alina9',35,39);
+// let newc9= new Cinderella('Alina0',35,40);
+//
+// let array=[newc,newc1,newc2,newc3,newc4,newc5,newc6,newc7,newc8,newc9];
+//
+// class Prince extends Cinderella {
+//     constructor(name,age,findfootsize) {
+//         super(name,age);
+//         this.findfootsize=findfootsize;
+//     }
+// }
+//
+// let prince=new Prince('Vasya',22, 32);
+//
+// let find=(array,prince)=>{
+//     for (const item of array) {
+//         if(prince.findfootsize===item.footsize) {
+//             return `My cinderella is ${item.name}`
+//         }
+//     }
+// }
+//
+// console.log(find(array, prince));
+// let cinderella=array.find(value=>prince.findfootsize===value.footsize);
+// console.log(cinderella);
