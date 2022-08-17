@@ -67,52 +67,76 @@
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 
-//function Cars(model, manufacturer, release_date, max_speed, engine_volume) {
-        //this.model=model;
-        //this.manufacturer=manufacturer;
-        //this.release_date=release_date;
-        //this.max_speed=max_speed;
-        //this.engine_volume=engine_volume;
-        //this.drive = function (drive) {console.log(`driving with speed(${this.max_speed})`)}
-        //this.info = function (info) {console.log(`Model-${this.model}`,`Manufacturer-${this.manufacturer}`,
-            //`Release_date-${this.release_date}`,`Max_speed-${this.max_speed}`),`Engine_volume-${this.engine_volume}`};
-        //this.newSpeed=newSpeed;
-        //this.increaseMaxSpeed = function () {console.log(this.max_speed+this.newSpeed)};
-        //this.newValue=newValue;
-        //this.changeYear  = function () {console.log(this.newValue)};
-        //this.addDriver = function(driver){Cars.push(driver)};
+// function Cars(model, manufacturer, release_date, max_speed, engine_volume) {
+//         this.model=model;
+//         this.manufacturer=manufacturer;
+//         this.release_date=release_date;
+//         this.max_speed=max_speed;
+//         this.engine_volume=engine_volume;
+//
+//         this.drive = function (drive) {console.log(`driving with speed(${this.max_speed})`)}
+//
+//         this.info = function () {
+//                 for(const carKey in this) {
+//                         if (typeof this[carKey] !== 'function') {
+//                                 console.log(`${carKey}---${this[carKey]}`);
+//                         }
+//                 }
+//         }
+//         this.increaseMaxSpeed= function (newSpeed) {
+//                 this.max_speed += newSpeed;
+//         };
+//         this.changeYear = function (newValue) {
+//                 this.release_date=newValue;
+//         };
+//         this.addDriver = function (driver) {
+//                 this.driver=driver;
+//         };
 // }
-// //newSpeed=100
-//newValue=2017
-//let car=new Cars('Lanos','BMW', 2006, 20000, 35);
-// car.drive.apply(car);
-// car.info.apply(car);
-// car.increaseMaxSpeed.apply(car);
-// car.changeYear.apply(car);
-//console.log(car)
+//
+// let car=new Cars('Lanos','BMW', 2006, 20000, 35);
+
+// car.increaseMaxSpeed(50);
+// console.log(car);
+// car.changeYear(2001);
+// console.log(car);
+// car.addDriver({name: 'Vasya', age: 32});
+// console.log(car);
 
 // - (Те саме, тільки через клас)
 
-    class Class {
-        constructor(model, manufacturer, release_date, max_speed, engine_volume) {
-            this.model = model;
-            this.manufacturer = manufacturer;
-            this.release_date = release_date;
-            this.max_speed = max_speed;
-            this.engine_volume = engine_volume;
-        }
-        drive = function (drive) {console.log(`driving with speed(${this.max_speed})`);};
-        info = function (info) {console.log(`Model-${this.model}`,`Manufacturer-${this.manufacturer}`,
-            `Release_date-${this.release_date}`,`Max_speed-${this.max_speed}`,`Engine_volume-${this.engine_volume}`)};
-        newSpeed=100;
-        newValue=2017
-        increaseMaxSpeed = function () {console.log(this.max_speed+this.newSpeed)};
-        changeYear  = function () {console.log(this.newValue)};
-        addDriver = function(driver){Class.push()};
-    }
-let car=new Class('Lanos','BMW', 2006, 20000, 35);
-car.drive.apply(car);
-car.info.apply(car);
-car.increaseMaxSpeed.apply(car);
-car.changeYear.apply(car);
-console.log(car);
+//     class Cars {
+//         constructor(model, manufacturer, release_date, max_speed, engine_volume) {
+//             this.model = model;
+//             this.manufacturer = manufacturer;
+//             this.release_date = release_date;
+//             this.max_speed = max_speed;
+//             this.engine_volume = engine_volume;
+//         }
+//         drive = function () {console.log(`driving with speed(${this.max_speed})`)}
+//
+//         info = function () {
+//                 for(const carKey in this) {
+//                         if (typeof this[carKey] !== 'function') {
+//                                 console.log(`${carKey}---${this[carKey]}`);
+//                         }
+//                 }
+//         }
+//         increaseMaxSpeed= function (newSpeed) {
+//                 this.max_speed += newSpeed;
+//         };
+//         changeYear = function (newValue) {
+//                 this.release_date=newValue;
+//         };
+//         addDriver = function (driver) {
+//                 this.driver=driver;
+//         };
+// }
+//
+// let car=new Cars('Lanos','BMW', 2006, 20000, 35);
+// car.addDriver({name:'Artem',age:500});
+// console.log(car);
+// -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+// Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+//     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+//     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
